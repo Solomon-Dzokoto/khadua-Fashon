@@ -226,6 +226,44 @@ body .third__section .about__us .bottom .right .image {
 body .third__section .about__us .bottom .right .image img {
   display: none;
 }
+body .forth__section {
+  margin-top: 10rem;
+  height: 150vh;
+}
+body .forth__section h1 {
+  font-size: 3rem;
+  color: #052e05;
+}
+body .forth__section .products {
+  margin-top: 4rem;
+  display: grid;
+  gap: 2rem;
+}
+body .forth__section .products .product {
+  background-color: rgba(197, 219, 204, 0.391);
+  height: 70%;
+  padding: 2rem 2rem;
+  border-radius: 0.3rem;
+  transition: all 1s ease;
+}
+body .forth__section .products .product:hover {
+  height: 100%;
+}
+body .forth__section .products .product h2 {
+  letter-spacing: 1.5px;
+}
+body .forth__section .products .product h3 {
+  margin-top: 1rem;
+  color: grey;
+}
+body .forth__section .products .product .image {
+  width: 80vw;
+  height: 60vh;
+}
+body .forth__section .products .product .image img {
+  width: 100%;
+  height: 100%;
+}
 
 @media (width > 700px) {
   body .container {
@@ -318,6 +356,12 @@ body .third__section .about__us .bottom .right .image img {
     display: grid;
     width: 100%;
     height: 100%;
+  }
+  body .forth__section .products {
+    grid-template-columns: 1fr 1fr;
+  }
+  body .forth__section .products .product .image {
+    width: 30vw;
   }
 }
 @media (width > 1000px) {
@@ -448,6 +492,16 @@ body .third__section .about__us .bottom .right .image img {
   body .third__section .about__us .bottom .right .image img {
     width: 100%;
     height: 100%;
+  }
+  body .forth__section {
+    margin-top: 30%;
+  }
+  body .forth__section .products {
+    margin-top: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  body .forth__section .products .product .image {
+    width: 20vw;
   }
 }
 
