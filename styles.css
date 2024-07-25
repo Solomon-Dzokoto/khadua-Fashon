@@ -135,6 +135,14 @@ body .second__section .rewards article {
   align-items: start;
   margin-top: 2rem;
   gap: 1rem;
+  transition: all 0.5s ease;
+}
+body .second__section .rewards article:hover .icons {
+  background-color: #052e05;
+  border-color: #052e05;
+}
+body .second__section .rewards article:hover .icons i {
+  color: #ffffff;
 }
 body .second__section .rewards article .icons {
   display: inline-block;
@@ -315,6 +323,61 @@ body .fifth__section .testimonials .testimonial .words .thumbnails .image img {
   height: 100%;
   border-radius: 5rem;
 }
+body footer {
+  background-color: #052e05;
+  margin-top: 6rem;
+  padding: 1.5rem;
+  display: grid;
+  gap: 2rem;
+}
+body footer .khadua .logo {
+  margin-left: -0.8rem;
+  width: 10rem;
+}
+body footer .khadua .logo img {
+  width: 100%;
+}
+body footer .khadua p {
+  margin-top: 1rem;
+  color: #f7f5f5;
+  opacity: 0.8;
+}
+body footer .khadua .icons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+body footer .khadua .icons span {
+  padding: 0.4rem;
+  background-color: rgba(255, 255, 255, 0.8941176471);
+  border-radius: 2rem;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+body footer .khadua .icons span:hover {
+  background: #052e05;
+  border: 1px solid white;
+}
+body footer .khadua .icons span:hover i {
+  color: white;
+}
+body footer .about h2 {
+  font-weight: 400;
+  color: #c6621b;
+}
+body footer .about ul {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+body footer .about ul li a {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #f7f5f5;
+}
+body footer .about ul li a:hover {
+  color: #c6621b;
+}
 
 @media (width > 700px) {
   body .container {
@@ -418,6 +481,10 @@ body .fifth__section .testimonials .testimonial .words .thumbnails .image img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+  }
+  body footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (width > 1000px) {
@@ -558,6 +625,9 @@ body .fifth__section .testimonials .testimonial .words .thumbnails .image img {
   }
   body .forth__section .products .product .image {
     width: 20vw;
+  }
+  body footer {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
